@@ -19,8 +19,8 @@
 
 **Purpose**: Prepare the repository for the document feature and establish the storage/security conventions used across all stories.
 
-- [ ] T001 Create document feature directories and safe storage layout under `ContosoDashboard/AppData/uploads/` and `ContosoDashboard/Services/`
-- [ ] T002 [P] Add document metadata and audit model scaffolding in `ContosoDashboard/Models/Document.cs`, `ContosoDashboard/Models/DocumentShare.cs`, and `ContosoDashboard/Models/DocumentActivity.cs`
+- [X] T001 Create document feature directories and safe storage layout under `ContosoDashboard/AppData/uploads/` and `ContosoDashboard/Services/`
+- [X] T002 [P] Add document metadata and audit model scaffolding in `ContosoDashboard/Models/Document.cs`, `ContosoDashboard/Models/DocumentShare.cs`, and `ContosoDashboard/Models/DocumentActivity.cs`
 
 ---
 
@@ -28,13 +28,13 @@
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story implementation begins.
 
-- [ ] T003 Define storage abstraction and upload contract in `ContosoDashboard/Services/IFileStorageService.cs`
-- [ ] T004 [P] Implement the local storage provider in `ContosoDashboard/Services/LocalFileStorageService.cs`
-- [ ] T005 [P] Register document services and storage dependency injection in `ContosoDashboard/Program.cs`
-- [ ] T006 Add document DbSets and relationship configuration in `ContosoDashboard/Data/ApplicationDbContext.cs`
-- [ ] T007 Create the document service contract in `ContosoDashboard/Services/IDocumentService.cs`
-- [ ] T008 Add file validation, access checks, and safe path generation in `ContosoDashboard/Services/DocumentService.cs`
-- [ ] T009 Create the async scan queue publisher in `ContosoDashboard/Services/DocumentScanQueueService.cs` for Azure Functions / Queue Storage integration
+- [X] T003 Define storage abstraction and upload contract in `ContosoDashboard/Services/IFileStorageService.cs`
+- [X] T004 [P] Implement the local storage provider in `ContosoDashboard/Services/LocalFileStorageService.cs`
+- [X] T005 [P] Register document services and storage dependency injection in `ContosoDashboard/Program.cs`
+- [X] T006 Add document DbSets and relationship configuration in `ContosoDashboard/Data/ApplicationDbContext.cs`
+- [X] T007 Create the document service contract in `ContosoDashboard/Services/IDocumentService.cs`
+- [X] T008 Add file validation, access checks, and safe path generation in `ContosoDashboard/Services/DocumentService.cs`
+- [X] T009 Create the async scan queue publisher in `ContosoDashboard/Services/DocumentScanQueueService.cs` for Azure Functions / Queue Storage integration
 
 **Checkpoint**: Foundation ready - user story implementation can begin in parallel.
 
@@ -48,12 +48,12 @@
 
 ### Implementation for User Story 1
 
-- [ ] T010 [P] [US1] Implement Document entity fields and validation rules in `ContosoDashboard/Models/Document.cs`
-- [ ] T011 [P] [US1] Implement upload, metadata persistence, and file save workflow in `ContosoDashboard/Services/DocumentService.cs`
-- [ ] T012 [US1] Implement the queued virus-scan workflow and status update logic in `ContosoDashboard/Services/DocumentScanQueueService.cs`
-- [ ] T013 [US1] Add upload UI and validation form in `ContosoDashboard/Pages/Documents.razor` and `ContosoDashboard/Pages/Documents.razor.cs`
-- [ ] T014 [US1] Add personal document list, sorting, filtering, and search in `ContosoDashboard/Pages/Documents.razor`
-- [ ] T015 [US1] Add success/error messaging and rejected upload handling in `ContosoDashboard/Pages/Documents.razor`
+- [X] T010 [P] [US1] Implement Document entity fields and validation rules in `ContosoDashboard/Models/Document.cs`
+- [X] T011 [P] [US1] Implement upload, metadata persistence, and file save workflow in `ContosoDashboard/Services/DocumentService.cs`
+- [X] T012 [US1] Implement the queued virus-scan workflow and status update logic in `ContosoDashboard/Services/DocumentScanQueueService.cs`
+- [X] T013 [US1] Add upload UI and validation form in `ContosoDashboard/Pages/Documents.razor` and `ContosoDashboard/Pages/Documents.razor.cs`
+- [X] T014 [US1] Add personal document list, sorting, filtering, and search in `ContosoDashboard/Pages/Documents.razor`
+- [X] T015 [US1] Add success/error messaging and rejected upload handling in `ContosoDashboard/Pages/Documents.razor`
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently.
 
